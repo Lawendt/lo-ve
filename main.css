@@ -1,6 +1,7 @@
 body {
     background-color: rgb(230, 173, 190);
     text-align: center;
+    align-items: center;
 }
 
 h1 {
@@ -8,6 +9,8 @@ h1 {
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
+    color: rgb(109, 4, 37);
+    height: 100px;
 }
 
 p {
@@ -16,6 +19,7 @@ p {
     background: linear-gradient(222deg, rgba(237,35,155,1) 0%, rgba(239,48,45,1) 31%, rgba(240,31,235,1) 77%, rgba(255,33,0,0.5468312324929971) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    overflow-wrap: break-word; 
 }
 
 .wavy {
@@ -26,6 +30,7 @@ p {
     position: relative;
     top: 0;
     left: 0;
+    vertical-align: middle;
 }
 
 @keyframes wavy {
@@ -50,4 +55,19 @@ p {
 
 .finish {
     background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWFlNDU4NWUxZDY5ZGQ0ODA5N2Q4YTIwZTcwODc5MWM0NjdiOTQ3OSZjdD1z/gkFMKf6KtUlerKf0jg/giphy.gif");
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+.foto {
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
