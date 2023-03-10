@@ -36,7 +36,20 @@ function ChangePlaylist()
     playlist.src = possibilities[Math.floor(Math.random() * possibilities.length)];
 }
 
+function ChangePhoto()
+{
+    let max_num = 62;
+
+    let foto = document.getElementById("foto");
+    foto.src = "fotos/" + Math.floor(Math.random() * max_num) + ".jpg";
+}
+
+
 setTimeout(() => {
     startWave();
     ChangePlaylist();
+    ChangePhoto();
+    setInterval(() => {
+        ChangePhoto();
+    }, 1000 * 30);
 }, 2);
